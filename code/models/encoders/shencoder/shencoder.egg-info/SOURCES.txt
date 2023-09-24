@@ -1,0 +1,9 @@
+setup.py
+/local-scratch/localhome/ama240/SKED_private/code/models/encoders/shencoder/src/bindings.cpp
+/local-scratch/localhome/ama240/SKED_private/code/models/encoders/shencoder/src/shencoder.cu
+/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/shencoder/src/bindings.cpp
+/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/shencoder/src/shencoder.cu
+shencoder.egg-info/PKG-INFO
+shencoder.egg-info/SOURCES.txt
+shencoder.egg-info/dependency_links.txt
+shencoder.egg-info/top_level.txt

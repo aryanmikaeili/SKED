@@ -1,0 +1,5 @@
+# ninja log v5
+0	13065	1684896814003537857	/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/src/bindings.o	d284749e2183c718
+0	33443	1684896834383602181	/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/src/shencoder.o	360b1ecd31ca160b
+11	13068	1684897708538523928	/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/src/bindings.o	b92d62ffe7f82c6f
+11	33430	1684897728902598877	/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/stable-dreamfusion/shencoder/src/shencoder.o	25a407705b6a4f1b

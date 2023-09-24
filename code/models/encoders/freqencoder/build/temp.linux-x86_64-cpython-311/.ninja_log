@@ -1,0 +1,5 @@
+# ninja log v5
+0	13138	1695185633393838276	/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/freqencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/freqencoder/src/bindings.o	d1afbcc4b8d69838
+0	33290	1695185653545928895	/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/freqencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/encoders/freqencoder/src/freqencoder.o	6a0fcdd5d345a805
+2	13447	1695531377105119508	/local-scratch/localhome/ama240/SKED_private/code/models/encoders/freqencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/SKED_private/code/models/encoders/freqencoder/src/bindings.o	3e9583554b69b7a4
+3	33597	1695531397257199564	/local-scratch/localhome/ama240/SKED_private/code/models/encoders/freqencoder/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/SKED_private/code/models/encoders/freqencoder/src/freqencoder.o	e6cce4e49c4679e

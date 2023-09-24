@@ -1,0 +1,5 @@
+# ninja log v5
+0	13843	1695185710966187097	/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/raymarching/raymarching/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/raymarching/raymarching/src/bindings.o	f90a70212e531dc5
+0	33408	1695185730534275090	/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/raymarching/raymarching/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/sketch_based_dreamfusion/code/models/raymarching/raymarching/src/raymarching.o	a4ddee7960a46961
+2	14361	1695531269992694001	/local-scratch/localhome/ama240/SKED_private/code/models/raymarching/raymarching/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/SKED_private/code/models/raymarching/raymarching/src/bindings.o	e406db49b13babd8
+3	34450	1695531290084773817	/local-scratch/localhome/ama240/SKED_private/code/models/raymarching/raymarching/build/temp.linux-x86_64-cpython-311/local-scratch/localhome/ama240/SKED_private/code/models/raymarching/raymarching/src/raymarching.o	54beafecfcde3424

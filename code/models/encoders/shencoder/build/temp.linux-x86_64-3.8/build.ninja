@@ -1,0 +1,34 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda/bin/nvcc
+
+cflags = -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/TH -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/include -I/usr/include/python3.8 -c
+post_cflags = -O3 -std=c++14 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_shencoder -D_GLIBCXX_USE_CXX11_ABI=0
+cuda_cflags = -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/TH -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/local-scratch/localhome/ama240/editing_dreamfusion/venv/include -I/usr/include/python3.8 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++14 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_shencoder -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc  $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+
+
+build /local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/build/temp.linux-x86_64-3.8/local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/src/shencoder.o: cuda_compile /local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/src/shencoder.cu
+build /local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/build/temp.linux-x86_64-3.8/local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/src/bindings.o: compile /local-scratch/localhome/ama240/editing_dreamfusion/code/models/encoders/shencoder/src/bindings.cpp
+
+
+
+
+
+
+
